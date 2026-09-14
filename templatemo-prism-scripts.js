@@ -12,10 +12,7 @@ const portfolioData = [
     title: 'Vídeos Curtos',
     description: 'Conteúdos dinâmicos e estratégicos para Instagram, TikTok e Reels, desenvolvidos para capturar a atenção nos primeiros segundos.',
     tech: ['Vídeos Curtos', 'TikTok', 'Instagram'],
-    link1: 'https://www.instagram.com/p/DV8w2YbCfiB/',
-    link2:  'https://www.instagram.com/p/DV_VybHjVvL/',
-    link3:  'https://www.instagram.com/p/DXKoyPGERxt/',
-    link4:  'https://www.instagram.com/reels/DV1DGUYhf2M/'
+    link1: 'https://www.instagram.com/p/DV8w2YbCfiB/'
 },
 },
 {
@@ -39,8 +36,14 @@ const portfolioData = [
     description: 'Produções audiovisuais com narrativa, direção e edição cinematográfica, criadas para envolver o espectador do início ao fim.',
     tech: ['Cinema', 'Roteiro', 'Direção', 'Edição'],
     link: 'https://www.youtube.com/@CineDivas'
-}
-    
+},
+   {
+   id: 6,
+   title: 'Vídeos UGC',
+   descripition: 'Vídeos promocionais de produtos de forma orgânica.',
+   tech: ['Produtos', 'Promocionais', 'Vídeos rápidos'],
+   link: 'https://drive.google.com/drive/folders/1oRJ5kbxylr_P7aoT4n1YEVsijslP22tE?usp=sharing'
+   }  
     
 ];
 
