@@ -12,7 +12,10 @@ const portfolioData = [
     title: 'Vídeos Curtos',
     description: 'Conteúdos dinâmicos e estratégicos para Instagram, TikTok e Reels, desenvolvidos para capturar a atenção nos primeiros segundos.',
     tech: ['Vídeos Curtos', 'TikTok', 'Instagram'],
-    link: 'https://www.instagram.com/reel/DV1DGUYhf2M/'
+    link1: 'https://www.instagram.com/p/DV8w2YbCfiB/',
+    link4:  'https://www.instagram.com/p/DV_VybHjVvL/',
+    link5:  'https://www.instagram.com/p/DXKoyPGERxt/'
+},
 },
 {
     id: 3,
