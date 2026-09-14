@@ -14,7 +14,8 @@ const portfolioData = [
     tech: ['Vídeos Curtos', 'TikTok', 'Instagram'],
     link1: 'https://www.instagram.com/p/DV8w2YbCfiB/',
     link4:  'https://www.instagram.com/p/DV_VybHjVvL/',
-    link5:  'https://www.instagram.com/p/DXKoyPGERxt/'
+    link5:  'https://www.instagram.com/p/DXKoyPGERxt/',
+    link6: 'https://www.instagram.com/reels/DV1DGUYhf2M/'
 },
 },
 {
