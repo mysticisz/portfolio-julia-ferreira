@@ -12,8 +12,9 @@ const portfolioData = [
     title: 'Vídeos Curtos',
     description: 'Conteúdos dinâmicos e estratégicos para Instagram, TikTok e Reels, desenvolvidos para capturar a atenção nos primeiros segundos.',
     tech: ['Vídeos Curtos', 'TikTok', 'Instagram'],
-    link1: 'https://www.instagram.com/p/DV8w2YbCfiB/'
-},
+    link3: 'https://www.instagram.com/p/DV_VybHjVvL/',
+    link4: 'https://www.instagram.com/p/DV8w2YbCfiB/',
+    link5: 'https://www.instagram.com/p/DXKoyPGERxt/'
 },
 {
     id: 3,
@@ -21,7 +22,8 @@ const portfolioData = [
     description: 'Registros dinâmicos de eventos, capturando os melhores momentos com uma edição envolvente e profissional.',
     tech: ['Filmmaker', 'Fotos'],
     link1: 'https://www.instagram.com/reel/DW_z0LHDlfU/?igsh=anQ3bHQ4eDNta2Vv',
-    link2: 'https://www.instagram.com/p/DO6zsbhifFF/?img_index=4&igsh=YmNpc2tobTlmd3gz'
+    link2: 'https://www.instagram.com/p/DO6zsbhifFF/?img_index=4&igsh=YmNpc2tobTlmd3gz',
+    link6: 'https://drive.google.com/drive/folders/17ErAhhDI6L4nHxaZgzydCXk4mnGiilzt?usp=drive_link'
 },
 {
     id: 4,
@@ -40,7 +42,7 @@ const portfolioData = [
    {
    id: 6,
    title: 'Vídeos UGC',
-   descripition: 'Vídeos promocionais de produtos de forma orgânica.',
+   description: 'Vídeos promocionais de produtos de forma orgânica.',
    tech: ['Produtos', 'Promocionais', 'Vídeos rápidos'],
    link: 'https://drive.google.com/drive/folders/1oRJ5kbxylr_P7aoT4n1YEVsijslP22tE?usp=sharing'
    }  
@@ -98,24 +100,45 @@ function createCarouselItem(data, index) {
     let buttonsHTML;
 
     if (data.id === 3) {
-        buttonsHTML = `
-            <div class="card-buttons">
-                <button class="card-cta" onclick="openProjectLink('${data.link1}')">
-                    Explorar
-                </button>
-
-                <button class="card-cta" onclick="openProjectLink('${data.link2}')">
-                    Explorar
-                </button>
-            </div>
-        `;
-    } else {
-        buttonsHTML = `
-            <button class="card-cta" onclick="openProjectLink('${data.link}')">
+    buttonsHTML = `
+        <div class="card-buttons">
+            <button class="card-cta" onclick="openProjectLink('${data.link1}')">
                 Explorar
             </button>
-        `;
-    }
+
+            <button class="card-cta" onclick="openProjectLink('${data.link2}')">
+                Explorar
+            </button>
+
+            <button class="card-cta" onclick="openProjectLink('${data.link6}')">
+                Explorar
+            </button>
+
+        </div>
+    `;
+} else if (data.id === 2) {
+    buttonsHTML = `
+        <div class="card-buttons">
+            <button class="card-cta" onclick="openProjectLink('${data.link3}')">
+                Explorar
+            </button>
+
+            <button class="card-cta" onclick="openProjectLink('${data.link4}')">
+                Explorar
+            </button>
+
+            <button class="card-cta" onclick="openProjectLink('${data.link5}')">
+                Explorar
+            </button>
+        </div>
+    `;
+} else {
+    buttonsHTML = `
+        <button class="card-cta" onclick="openProjectLink('${data.link}')">
+            Explorar
+        </button>
+    `;
+}
 
     item.innerHTML = `
         <div class="card">
